@@ -33,7 +33,7 @@ The best practice when using Git to collaborate on projects is to always run `gi
 
 Navigate into the repository, and type the command `code test.py`. This will open the selected file in VS Code. If you'd like to open the current directory, type the command `code .` or if u want to open both the directory and the file `test.py`, run the command `code . test.py`.
 
-Type in any line of code you like, say for example `print(Hello World!)`. Once you have done this, save the file (ctrl/cmd + s) and switch back to the terminal. Type the command `git status` to see which files have been modified. This is a very useful command which shows the files that have been modified, staged or have gone untracked. 
+Type in any line of code you like, say for example `print("Hello World!")`. Once you have done this, save the file (ctrl/cmd + s) and switch back to the terminal. Type the command `git status` to see which files have been modified. This is a very useful command which shows the files that have been modified, staged or have gone untracked. 
 
 Now, run the command `git add <file(s)>` or in this instance, `git add test.py`. This command stages the file for the incoming commit.
 
