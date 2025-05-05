@@ -28,7 +28,7 @@ To clone a remote repository onto your local machine, you need the URL of the re
 
 Navigate to the directory of your choice on your computer and run the command `git clone <repositoryURL>`, or in this instance, `git clone https://github.com/SUAIA-USYD/workshops`. And there you have it! You have successfully cloned into the repository of this workshop. To check, run the command `cd workshops` and it should take you to the cloned repository. Just run `ls` to view the files in the repo.
 
-## Editing an exisitng file
+## Editing an exisiting file
 The best practice when using Git to collaborate on projects is to always run `git pull` before working on your part as you will receive the updated code made by your teammates.
 
 Navigate into the repository, and type the command `code test.py`. This will open the selected file in VS Code. If you'd like to open the current directory, type the command `code .` or if u want to open both the directory and the file `test.py`, run the command `code . test.py`.
