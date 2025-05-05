@@ -1,1 +1,20 @@
-# workshops
+# Introduction to Git and building your first Maching Learning Model
+
+## What is Git?
+**Git** is a distributed version control system that lets you track changes in your code or any text file, collaborate safely with others, and rollback mistakes easily.  Developers typically start by creating—or “initializing”—a repository (the `.git` folder that tracks all changes) on their local machine or by cloning an existing remote repository ("repo" for short) from a service like GitHub, GitLab, or Bitbucket. Once they have a repo, they:
+- **Make commits locally:** As they write or modify code, they stage changes with `git add` nd record snapshots with `git commit`.
+- **Push to remote repos:** When they’re ready to share work or back it up, they send their commits to a central remote repository using `git push`, making their updates available to teammates.
+- **Pull updates:** To incorporate teammates’ changes, they use `git pull` (which fetches new commits from the remote and merges them locally) or run `git fetch` followd by `git merge` or more control.
+- **Branch for features:** They create lightweight branchesto develop new features or fixes in isolation and then merge them back into main branches when complete .
+- **Collaborate via pull requests:** On platforms like GitHub, they open a pull request to propose merging a branch into the main code line, enabling code review, discussion, and automated testing before integration.
+- **Resolve conflicts:**  If two people edit the same lines, Git flags a merge conflict; developers then manually reconcile the differences, commit the resolution, and continue.
+- **Tag releases:** They mark specific commits as releases to track versions and roll back if necessary.
+
+## Typical Everyday Workflow
+1. **Edit Code**
+2. **Stage & Commit** your changes locally
+3. **Push** to the teams remote repository
+4. **Review** teammates' work via pull requests
+5. **Pull** their changes into your local repository
+6. **Repeat**
+
