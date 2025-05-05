@@ -39,7 +39,7 @@ Click on the option "Create Fork":
 
 <img width="1728" alt="Screenshot 2025-05-05 at 10 02 32 pm" src="https://github.com/user-attachments/assets/772067cf-780a-4cb0-9abd-dac81fb69c2d" />
 
-Now, copy the new forked URL and clong the repository using this URL in directory of your choice. The new URL should have your GitHub username.
+Now, copy the new forked URL and clone the repository using this URL in directory of your choice. The new URL should have your GitHub username. Run the command `git clone https://github.com/faisbyte/workshops`.
 
 <img width="1728" alt="Screenshot 2025-05-05 at 10 04 09 pm" src="https://github.com/user-attachments/assets/c93d87bd-b153-4047-b030-3add96943037" />
 
