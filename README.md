@@ -18,3 +18,12 @@
 5. **Pull** their changes into your local repository
 6. **Repeat**
 
+# Getting Started with Git
+
+## Making your first Repository
+To make your first Git repository on your machine, open Terminal (Mac) or Powershell (Windows) and navigate to any directory you wish or simply make a new directory using `mkdir <dir_name>` and type the command `git init`. You have now created a Git repository in your directory!
+
+## Cloning a remote repository
+To clone a remote repository onto your local machine, you need the URL of the repository. For instance here, lets clone this current repository onto your machine.
+
+Navigate to the directory of your choice on your computer and run the command `git clone <repositoryURL>`, or in this instance, `git clone https://github.com/SUAIA-USYD/workshops`. And there you have it! You have successfully cloned into the repository of this workshop. To check, run the command `cd workshops` and it should take you to the cloned repository. Just run `ls` to view the files in the repo.
