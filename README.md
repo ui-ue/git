@@ -27,3 +27,16 @@ To make your first Git repository on your machine, open Terminal (Mac) or Powers
 To clone a remote repository onto your local machine, you need the URL of the repository. For instance here, lets clone this current repository onto your machine.
 
 Navigate to the directory of your choice on your computer and run the command `git clone <repositoryURL>`, or in this instance, `git clone https://github.com/SUAIA-USYD/workshops`. And there you have it! You have successfully cloned into the repository of this workshop. To check, run the command `cd workshops` and it should take you to the cloned repository. Just run `ls` to view the files in the repo.
+
+## Editing an exisitng file
+The best practice when using Git to collaborate on projects is to always run `git pull` before working on your part as you will receive the updated code made by your teammates.
+
+Navigate into the repository, and type the command `code test.py`. This will open the selected file in VS Code. If you'd like to open the current directory, type the command `code .` or if u want to open both the directory and the file `test.py`, run the command `code . test.py`.
+
+Type in any line of code you like, say for example `print(Hello World!)`. Once you have done this, save the file (ctrl/cmd + s) and switch back to the terminal. Type the command `git status` to see which files have been modified. This is a very useful command which shows the files that have been modified, staged or have gone untracked. 
+
+Now, run the command `git add <file(s)>` or in this instance, `git add test.py`. This command stages the file for the incoming commit.
+
+Now run `git commit -m "message"` or here `git commit -m "edited the file test.py"`. This command records a snapshot of the commit with the change, and also allows you to put in a commit message of your choice.
+
+Finally, run the command `git push`, which commits the change made from the local repo on your machine to its remote counterpart.
