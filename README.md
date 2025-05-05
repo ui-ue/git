@@ -31,6 +31,18 @@ Navigate to the directory of your choice on your computer and run the command `g
 ## Editing an exisiting file
 The best practice when using Git to collaborate on projects is to always run `git pull` before working on your part as you will receive the updated code made by your teammates.
 
+On the main repository page, click on "Fork" option on the top right. It is as follows:
+
+<img width="1728" alt="Screenshot 2025-05-05 at 10 00 07 pm" src="https://github.com/user-attachments/assets/3d5c68ae-b89b-4a68-9452-3d25e96f4c95" />
+
+Click on the option "Create Fork":
+
+<img width="1728" alt="Screenshot 2025-05-05 at 10 02 32 pm" src="https://github.com/user-attachments/assets/772067cf-780a-4cb0-9abd-dac81fb69c2d" />
+
+Now, copy the new forked URL and clong the repository using this URL in directory of your choice. The new URL should have your GitHub username.
+
+<img width="1728" alt="Screenshot 2025-05-05 at 10 04 09 pm" src="https://github.com/user-attachments/assets/c93d87bd-b153-4047-b030-3add96943037" />
+
 Navigate into the repository, and type the command `code test.py`. This will open the selected file in VS Code. If you'd like to open the current directory, type the command `code .` or if u want to open both the directory and the file `test.py`, run the command `code . test.py`.
 
 Type in any line of code you like, say for example `print("Hello World!")`. Once you have done this, save the file (ctrl/cmd + s) and switch back to the terminal. Type the command `git status` to see which files have been modified. This is a very useful command which shows the files that have been modified, staged or have gone untracked. 
