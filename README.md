@@ -1,4 +1,4 @@
-# Introduction to Git and building your first Maching Learning Model
+# Introduction to Git and building your first Machine Learning Model
 
 ## What is Git?
 **Git** is a distributed version control system that lets you track changes in your code or any text file, collaborate safely with others, and rollback mistakes easily.  Developers typically start by creating—or “initializing”—a repository (the `.git` folder that tracks all changes) on their local machine or by cloning an existing remote repository ("repo" for short) from a service like GitHub, GitLab, or Bitbucket. Once they have a repo, they:
