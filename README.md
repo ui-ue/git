@@ -52,3 +52,87 @@ Now, run the command `git add <file(s)>` or in this instance, `git add test.py`.
 Now run `git commit -m "message"` or here `git commit -m "edited the file test.py"`. This command records a snapshot of the commit with the change, and also allows you to put in a commit message of your choice.
 
 Finally, run the command `git push`, which commits the change made from the local repo on your machine to its remote counterpart.
+
+## Working with Branches and Pull Requests
+
+In real-world projects, it's best practice to **create branches** when developing new features or fixing bugs. This allows you to make changes in isolation from the `main` branch, which usually contains the production-ready code.
+
+### Creating and Switching to a Branch
+
+To create and switch to a new branch, use:
+
+```bash
+git checkout -b <branch-name>
+```
+
+For example:
+
+```bash
+git checkout -b feature/add-ml-model
+```
+
+This command:
+
+* Creates a new branch called `feature/add-ml-model`
+* Switches you to that branch immediately
+
+You can check what branch you’re on using:
+
+```bash
+git branch
+```
+
+The active branch will be highlighted with an asterisk `*`.
+
+### Making Changes on a Branch
+
+Once you're on your new branch, edit files as usual. When you're done:
+
+1. Stage changes: `git add .`
+2. Commit them: `git commit -m "feat(ml_model): Implemented basic ML Model"`
+3. Push the branch to the remote repo:
+
+   ```bash
+   git push -u origin feature/add-ml-model
+   ```
+
+### Opening a Pull Request (PR)
+
+Now that your branch is on GitHub:
+
+1. Go to the GitHub repository in your browser.
+2. You’ll see a prompt to open a **Pull Request** (PR) for your new branch.
+3. Click **“Compare & pull request”**.
+4. Fill in the title and description of your changes.
+5. Submit the PR.
+
+Pull Requests are how team members review and discuss code before it gets merged into the main codebase.
+
+### Reviewing and Merging a Pull Request
+
+Once the PR is opened:
+
+* Teammates can leave comments, suggest changes, or approve the PR.
+* After review, someone (often the author or a maintainer) will merge it using the **“Merge pull request”** button.
+
+Once merged, your branch’s changes become part of the `main` branch.
+
+### Cleaning Up
+
+After a successful merge, you can delete the branch both locally and remotely:
+
+```bash
+# Delete the branch locally
+git branch -d feature/add-ml-model
+
+# Delete the branch remotely
+git push origin --delete feature/add-ml-model
+```
+
+---
+
+### Recap: Why Use Branches and PRs?
+
+* **Safety:** Isolate work to avoid breaking the main codebase.
+* **Collaboration:** Discuss, review, and improve code together.
+* **History:** Keep your git history clean and meaningful.
