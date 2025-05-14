@@ -2,3 +2,4 @@
 print("SUAIA is the best!")
 
 print("I am happy!")
+print("Bug is fixed")
