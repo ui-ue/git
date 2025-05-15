@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
-
+#potato
 df = pd.read_csv('iris.csv')
 
 X = df.iloc[:, :-1]  # All columns except the last one (features)
